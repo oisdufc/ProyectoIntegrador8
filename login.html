@@ -1,43 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-<form action="./login.html" method="get" id="registroForm">
-    <section class="contenedorForm">
-    <div class="formulario">
-        <div>
-        <h2>Crea tu cuenta</h2>
-    <div>
-        <label for="mail">Email: </label>
-        <input type="mail" name="mail" id="mail" value="" placeholder="Correo electronico">
-        </div>
-    
-        <div>
-            <label for="pass">Contraseña</label>
-            <input type="password" name="pass" id="pass" value="" placeholder="Contraseña">
-        </div>
-
-<div>
-    <label for="passsretry">Repetir contraseña</label>
-    <input type="password" name="passsretry" id="passsretry" value="" placeholder="Repetir contraseña"> 
-</div> 
-<div id="mandar"></div>
-<div>
-    <button type="submit">Registrarme</button>
+<form id="loginForm" action="./index.html" method="get">
+    <section class="contenedorLogin">
+<div class="formLogin">
+   <h2 class="hLogin">
+       Iniciar sesión</h2>
+       <div>
+           <label>Email: </label>
+           <input type="email" name="mail" id="email" value="" placeholder="ej:pnadinic@gmail.com">
+       </div>
+       <div>
+           <label>Contraseña</label>
+           <input type="password" name="pass" id="password" value="" placeholder="ej:Algo123">
+       </div>
+       <div>
+           <button type="submit"> Ingresar </button>
+       </div>
+       <div>
+           <a href="./registro.html">No tengo cuenta</a>
+       </div>
 </div>
-<div>
-    <label> Terminos y condiciones </label>
-    <input type="checkbox" name="Terminos" value="Leyo las condiciones  y los terminos">
-</div>
-<div>
-    <a href="./login.html"> Ya tengo cuenta</a>
-</div>
-        </div>
     </section>
+   
 </form>
-</html>
