@@ -62,6 +62,24 @@ background-color: gray;
   justify-content: center;
   align-items: center;
 }
+.formulario{
+  height: 300px;
+  width: 500px;
+  border-radius: 20px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.titulo{
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
   .contenedorLogin{
       width: 100%; 
       display: flex;
@@ -69,4 +87,27 @@ background-color: gray;
       justify-content: center;
       align-items: center;
   }
+  .formLogin{
+      height: 300px;
+      width: 500px;
+      border-radius: 20px;
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
   
+  }
+  button[type="submit"]{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+}
+.hLogin{
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
