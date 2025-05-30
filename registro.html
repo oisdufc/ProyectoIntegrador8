@@ -1,48 +1,42 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/registro.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
-
-
-
-
-
-
-
-    <footer>
-        <h2>Agustin Cañizares, Santiago Cenicola, Pedro Nadinic</h2>
-    </footer>
+<form action="./login.html" method="get" id="registroForm">
+    <section class="contenedorForm">
+    <div class="formulario">
+        <div>
+        <h2 class="titulo">Crea tu cuenta</h2>
+    <div>
+        <label for="mail">Email: </label>
+        <input type="mail" name="mail" id="mail" value="" placeholder="Correo electronico">
+        </div>
     
-</body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/registro.css">
-</head>
-<body>
+        <div>
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" id="pass" value="" placeholder="Contraseña">
+        </div>
 
-
-
-
-
-
-
-
-    <footer>
-        <h2>Agustin Cañizares, Santiago Cenicola, Pedro Nadinic</h2>
-    </footer>
-    
-</body>
->>>>>>> 67869c2c8b8944f4c773cf397cb630e6b435e0f9
-</html>
+<div>
+    <label for="passsretry">Repetir contraseña</label>
+    <input type="password" name="passsretry" id="passsretry" value="" placeholder="Repetir contraseña"> 
+</div> 
+<div id="mandar"></div>
+<div>
+    <button type="submit">Registrarme</button>
+</div>
+<div>
+    <label> Terminos y condiciones </label>
+    <input type="checkbox" name="Terminos" value="Leyo las condiciones  y los terminos">
+</div>
+<div>
+    <a href="./login.html"> Ya tengo cuenta</a>
+</div>
+        </div>
+    </section>
+</form>
