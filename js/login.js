@@ -1,24 +1,24 @@
-let loginForm = document.querySelector("#loginForm");
-let campoEmail= document.querySelector("#email")
-let campoPassword= document.querySelector("#password")
+let logForm = document.querySelector("#loginForm");
+let logEmail= document.querySelector("#email")
+let logPassword= document.querySelector("#password")
 
-console.log(campoEmail.value);
-console.log(campoEmail);
-console.log(loginForm);
-console.log(campoPassword);
+console.log(logEmail.value);
+console.log(logEmail);
+console.log(logForm);
+console.log(logPassword);
 
-loginForm.addEventListener('submit',function(e){
+logForm.addEventListener('submit',function(e){
     e.preventDefault()
 
-    if (campoEmail.value == "") {
+    if (logEmail.value == "") {
         alert("Por favor complete el campo email")
-    }else if(campoPassword.value == ""){
+    }else if(logPassword.value == ""){
         alert("Por favor complete el campo contraseña")
-    }else if(campoPassword.value.length < 6 ){
+    }else if(logPassword.value.length < 6 ){
         alert("La contraseña debe tener al menos 6 caracteres")
     }else {
-        loginForm.submit()
-        localStorage.setItem("email", campoEmail.value)
-    } 
+        logForm.submit()
+        localStorage.setItem("email", logEmail.value)
+    }
 
 })  
