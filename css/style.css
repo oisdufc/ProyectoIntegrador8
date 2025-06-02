@@ -32,6 +32,7 @@ p {
 h1 {
     font-weight: 400;
     font-style: normal;
+    color: white;
   }
 h2 {
     font-weight: 400;
@@ -139,6 +140,7 @@ a {
 .header-logo img {
     width: 100px;
     height: 100px;
+    border-radius: 80px;
 }
 #erMail{
   color: red;
