@@ -13,10 +13,10 @@ reForm.addEventListener('submit', function(e){
     errContra.innerText = "Por favor, complete este campo"
 }
 else if (rPass.value.length < 6){
-erContra.innerText = "Debe tener 6 o mas caracteres"
+errContra.innerText = "Debe tener 6 o mas caracteres"
 }
 else if (rPass.value!=rPassretry.value){
-erContra2.innerText = "Deben coincidir las contraseñas"
+errContra2.innerText = "Deben coincidir las contraseñas"
 }
 else {
     reForm.submit()
