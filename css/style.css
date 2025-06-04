@@ -1,6 +1,5 @@
 * {
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
@@ -132,7 +131,6 @@ a {
     border: none;
     padding: 10px 20px;
     font-size: 14px;
-    transition: transform 0.3s ease;
     width: 85px;
     text-align: center;
     margin-left: 10px;
@@ -156,4 +154,21 @@ a {
 }
 #errContra2{
   color: red;
+}
+.trend-item {
+    margin: 10px;
+    text-align: center;
+    color: #f4ebe2;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+.trend-item img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+.link{
+  text-decoration: none;
+  color: rgb(78, 4, 57);
+  text-decoration: underline;
 }
