@@ -49,7 +49,7 @@ h2 {
     height: 450px;
   }
  header{
-background-color: #1e1e1e;;
+background-color: #e0e0e0cd;;
 display: flex;
  } 
  .header-links {
@@ -63,12 +63,14 @@ a {
 }
 
  body{
-    background-color: #2f90a3;
+    background-color: #063f6a;
  }
 
  footer{
-    background-color: gray;
+    background-color: #1e1e1e;
     text-align: center;
+    height: 25px;
+    font-size: 10px;
  }
 .trend{
   display: flex;
@@ -195,4 +197,14 @@ a {
     color: #f4ebe2;
     font-size: 20px;
     text-align: center;
+}
+.parrafo {
+    color: #f4ebe2;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+}
+.genero1{
+  text-decoration: none;
+  color: #f4ebe2;
 }

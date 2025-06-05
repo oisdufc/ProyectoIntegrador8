@@ -19,10 +19,11 @@ fetch(`https://api.themoviedb.org/3/movie/${peliculaId}?api_key=4538691d5c60f1ca
         <div class="detalle-item">
             <h2>${data.title}</h2>
             <img src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt="${data.title}">
-            <p>Fecha de lanzamiento: ${data.release_date}</p>
-            <p> Descripción: ${data.overview}</p>
-            <p>Calificación: ${data.vote_average}</p>
-            <p> Generos: ${data.genres.name}</p>
+            <p class='parrafo'>Fecha de lanzamiento: ${data.release_date}</p>
+            <p class='parrafo'>Descripción: ${data.overview}</p>
+            <p class='parrafo'>Calificación: ${data.vote_average}</p>
+            <p class='parrafo'>Duración: ${data.runtime} minutos</p>
+            <p class='parrafo'><a class="link" href="./generosPelicula.html"> Generos: ${data.genres.name}</a></p>
         </div>
     `;
 })
