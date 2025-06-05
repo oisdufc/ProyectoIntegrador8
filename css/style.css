@@ -63,7 +63,7 @@ a {
 }
 
  body{
-    background-color: #0b5463;
+    background-color: #2f90a3;
  }
 
  footer{
@@ -174,7 +174,7 @@ a {
 .link{
   text-decoration: none;
   color: #f4ebe2;
-  text-decoration: underline;
+  
 }
 .detalle-item{
     display: flex;

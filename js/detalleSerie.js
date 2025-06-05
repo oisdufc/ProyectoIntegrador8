@@ -22,7 +22,7 @@ fetch(`https://api.themoviedb.org/3/tv/${seriesId}?api_key=4538691d5c60f1ca0445b
             <p>Fecha de lanzamiento: ${data.first_air_date}</p>
             <p> Descripción: ${data.overview}</p>
             <p>Calificación: ${data.vote_average}</p>
-            <p><a href="./generosSerie.html">Géneros: ${data.genres.name}</a></p>
+            <p><a class="link" href="./generosSerie.html">Géneros: ${data.genres.name}</a></p>
         </div>
     `;
 })
