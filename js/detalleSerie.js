@@ -8,7 +8,7 @@ let seriesId = queryStringObj.get("id");
 
 console.log(seriesId);
 
-fetch(`https://api.themoviedb.org/3/tv/${seriesId}?api_key=4538691d5c60f1ca0445b38ca446d641`)
+fetch(`https://api.themoviedb.org/3/tv/${seriesId}?api_key=4538691d5c60f1ca0445b38ca446d641&language=es-ES`)
 .then(function(res) {
     return res.json();
 })
@@ -21,6 +21,8 @@ fetch(`https://api.themoviedb.org/3/tv/${seriesId}?api_key=4538691d5c60f1ca0445b
             <img src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt="${data.name}">
             <p>Fecha de lanzamiento: ${data.first_air_date}</p>
             <p> Descripción: ${data.overview}</p>
+            <p>Calificación: ${data.vote_average}</p>
+            <p>Géneros: ${data.genres.name}</p>
         </div>
     `;
 })

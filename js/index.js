@@ -1,5 +1,5 @@
 let trend = document.querySelector(".trend")
-const url = "https://api.themoviedb.org/3/movie/popular?api_key=4538691d5c60f1ca0445b38ca446d641";
+const url = "https://api.themoviedb.org/3/movie/popular?api_key=4538691d5c60f1ca0445b38ca446d641&language=es-ES";
 
 fetch(url)
     .then(function(res) {
@@ -26,7 +26,7 @@ fetch(url)
 );  
 
 let series = document.querySelector(".series")
-const url2 = "https://api.themoviedb.org/3/tv/top_rated?api_key=4538691d5c60f1ca0445b38ca446d641";
+const url2 = "https://api.themoviedb.org/3/tv/top_rated?api_key=4538691d5c60f1ca0445b38ca446d641&language=es-ES";
 
 fetch(url2)
     .then(function(res) {
@@ -53,7 +53,7 @@ fetch(url2)
 );
 
 let peliculas = document.querySelector('.peliculas')
-const url3 = "https://api.themoviedb.org/3/movie/top_rated?api_key=4538691d5c60f1ca0445b38ca446d641";
+const url3 = "https://api.themoviedb.org/3/movie/top_rated?api_key=4538691d5c60f1ca0445b38ca446d641&language=es-ES";
 
 fetch(url3)
     .then(function(res) {
