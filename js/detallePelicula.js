@@ -16,7 +16,7 @@ fetch(`https://api.themoviedb.org/3/movie/${peliculaId}?api_key=4538691d5c60f1ca
     console.log(data);
     let detalle = document.querySelector(".detalle");
     detalle.innerHTML = `
-        <div>
+        <div class="detalle-item">
             <h2>${data.title}</h2>
             <img src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt="${data.title}">
             <p>Fecha de lanzamiento: ${data.release_date}</p>

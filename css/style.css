@@ -176,3 +176,23 @@ a {
   color: #f4ebe2;
   text-decoration: underline;
 }
+.detalle-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detalle-item h2 {
+    color: #f4ebe2;
+    text-align: center;
+   font-size: 40px;
+}
+.detalle-item img {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+}
+.detalle-item p {
+    color: #f4ebe2;
+    font-size: 20px;
+    text-align: center;
+}
