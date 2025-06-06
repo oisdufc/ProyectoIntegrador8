@@ -63,8 +63,18 @@
     </header>
     
     <h1>Bienvenido a MovieCore</h1>
-    
+    <form action="resultado.html" method="get" class="buscador">
+        <input type="text" name="query" id="query" placeholder="Buscar...">
+        <button type="submit">Buscar</button>
+    </form>
+   <div class="buscador">
+    <label for="peliculas"> PELICULAS </label>
+    <input class="opcionPeli" type="radio" name="serieopelicula" id="peliculas" value="movie">
 
+    <label for="series"> SERIES </label>
+    <input class="opcionSerie" type="radio" name="serieopelicula" id="series" value="tv">
+   </div>
+    
 
     <h2 class="inicio">TOP TENDENCIAS</h2>
     <section class="trend">
