@@ -5,7 +5,7 @@ let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 
 let seriesId = queryStringObj.get("id");
-let nombregenero1 = queryStringObj.get("nombre");
+let nombregenero1 = queryStringObj.get("nombre1");
 console.log(nombregenero1);
 
 console.log(seriesId);
@@ -24,7 +24,7 @@ fetch(`https://api.themoviedb.org/3/tv/${seriesId}?api_key=4538691d5c60f1ca0445b
             <p>Fecha de lanzamiento: ${data.first_air_date}</p>
             <p> Descripción: ${data.overview}</p>
             <p>Calificación: ${data.vote_average}</p>
-            <p><a class="link" href="./detalleGeneroSerie.html?id=${data.genres[0].id}">Géneros: ${data.genres[0].name}</a></p>
+            <p><a class="link" href="./detalleGeneroSerie.html?id=${data.genres[0].id}&nombre1=${data.genres[0].name}">Géneros: ${data.genres[0].name}</a></p>
         </div>
     `;
 })
