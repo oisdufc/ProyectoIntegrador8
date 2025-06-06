@@ -19,6 +19,7 @@ return res.json();
     let peliculas = document.querySelector(".deGePe");
     let titulogenero = document.querySelector(".titulo-genero");
     titulogenero.innerHTML = `<h2 class="titulo-item">Peliculas de género: ${nombregenero}</h2>`;
+    
     for (let i = 0; i < data.results.length; i++) {
         let pelicula = data.results[i];
         peliculas.innerHTML += `
