@@ -218,3 +218,10 @@ a {
       font-weight: bold;
       width: 200px;
 }
+.serie-item {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: underline;
+}
