@@ -205,3 +205,9 @@ a {
   text-decoration: none;
   color: #f4ebe2;
 }
+.genero-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
