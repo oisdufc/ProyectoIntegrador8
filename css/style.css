@@ -206,8 +206,15 @@ a {
   color: #f4ebe2;
 }
 .genero-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+     display: inline-block;
+      padding: 20px;
+      margin: 10px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      text-align: center;
+      text-decoration: none;
+      color: beige;
+      background-color: #333;
+      font-weight: bold;
+      width: 200px;
 }
