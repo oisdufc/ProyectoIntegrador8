@@ -9,6 +9,7 @@ let nombre2 = queryStringObj.get("nombre2");
 let titulogenero = document.querySelector(".titulo-genero");
 titulogenero.innerHTML = `<h2 class="titulo-item">Películas de género: ${nombre2}</h2>`;
 
+
 fetch(`https://api.themoviedb.org/3/discover/movie?api_key=4538691d5c60f1ca0445b38ca446d641&language=es-ES&with_genres=${generoPeliId}`)
 .then(function(res){
 return res.json();
