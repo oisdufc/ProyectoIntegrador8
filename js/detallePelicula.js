@@ -23,7 +23,7 @@ fetch(`https://api.themoviedb.org/3/movie/${peliculaId}?api_key=4538691d5c60f1ca
             <p class='parrafo'>Descripción: ${data.overview}</p>
             <p class='parrafo'>Calificación: ${data.vote_average}</p>
             <p class='parrafo'>Duración: ${data.runtime} minutos</p>
-            <p class='parrafo'><a class="link" href="./generosPelicula.html"> Generos: ${data.genres[0].name}</a></p>
+            <p class='parrafo'><a class="link" href="./detalleGeneroPeli.html?id=${data.genres[0].id}"> Generos: ${data.genres[0].name}</a></p>
         </div>
     `;
 })

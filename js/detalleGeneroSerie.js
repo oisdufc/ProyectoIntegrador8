@@ -6,6 +6,7 @@ let queryStringObj = new URLSearchParams(queryString);
 
 let generoSerieId = queryStringObj.get("id");
 
+let nombregenero1 = queryStringObj.get("nombre1");
 console.log(generoSerieId);
 
 fetch(`https://api.themoviedb.org/3/discover/tv?api_key=4538691d5c60f1ca0445b38ca446d641&language=es-ES&with_genres=${generoSerieId}`)
@@ -15,6 +16,10 @@ fetch(`https://api.themoviedb.org/3/discover/tv?api_key=4538691d5c60f1ca0445b38c
 .then(function(data) { 
     console.log(data);
     let series = document.querySelector(".deGeSe");
+    let titulogenero1 = document.querySelector(".titulo-genero1");
+    
+    titulogenero1.innerHTML = `<h2 class="titulo-item">Series de género: ${nombregenero1}</h2>`;
+    
     for (let i = 0; i < data.results.length; i++) {
         let serie = data.results[i];
         series.innerHTML += `

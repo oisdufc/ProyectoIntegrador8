@@ -11,7 +11,7 @@ fetch(url)
             let genero = data.genres[i];
             generos.innerHTML += `
                 <div class="genero-item">
-                    <a href="detalleGeneroPeli.html?id=${genero.id}" class='link'>
+                    <a href="detalleGeneroPeli.html?id=${genero.id}&nombre=${genero.name}" class='link'>
                         <h3>${genero.name}</h3>
                     </a>
                 </div>
